@@ -12,7 +12,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
-import java.sql.Connection;
 
 public class AltaCuota implements WindowListener, ActionListener
 {
@@ -38,7 +37,6 @@ public class AltaCuota implements WindowListener, ActionListener
 
 	Utilidades utilidades = new Utilidades();
 
-	Connection connection = null;
 	Boolean altaCorrecta = false;
 	int idSocioFK;
 
@@ -103,7 +101,6 @@ public class AltaCuota implements WindowListener, ActionListener
 				String[] cadena = choSocio.getSelectedItem().split("-");
 				idSocioFK = Integer.parseInt(cadena[0]);
 				altaCorrecta = utilidades.altaCuota(txtFechaCuota, txtImporte, txtFechaPago, txtTipo, idSocioFK);
-				utilidades.desconectar(connection);
 				if(altaCorrecta)
 				{
 					etiqueta.setText("Alta Correcta");
