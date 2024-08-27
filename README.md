@@ -1,0 +1,5 @@
+Se desea informatizar la gestión de un club de tenis para controlar los socios, las cuotas que estos deben pagar mensualmente, las pistas y las reservas de estas.
+En cuanto a los socios, queremos saber su nombre, sus apellidos, su DNI, su teléfono, su correo y su cuenta bancaria para el caso que domicilie las cuotas. Para evitar duplicados, el DNI debe ser único.
+De las pistas guardaremos solamente su denominación y el tipo de esta, a saber, Hierva, Cemento, Tierra batida. Igualmente debemos evitar duplicidades con la denominación.
+La información que debemos registrar en el sistema de las cuotas es la fecha (en formato mes-año), el importe en €, la fecha en la que se ha pagado por parte del socio y el tipo de pago que este tiene establecido: domiciliada, en efectivo, por transferencia, …
+Por último, de las reservas registraremos la fecha de esta, la hora de inicio y la hora de fin, teniendo en cuenta que las pistas están disponibles de 8:00 a 22:00, siendo la última reserva a las 21:00.
